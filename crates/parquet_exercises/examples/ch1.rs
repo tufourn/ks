@@ -61,7 +61,7 @@ fn vec_rows_to_record_batch(rows: Vec<Row>) -> RecordBatch {
         Field::new("id", DataType::Int64, false),
         Field::new("cost", DataType::Float64, false),
         Field::new(
-            "id",
+            "cost_components",
             DataType::List(Arc::new(Field::new("item", DataType::Float64, false))),
             false,
         ),
